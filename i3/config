@@ -5,7 +5,7 @@
 # this file and re-run i3-config-wizard(1).
 #
 
-set $lock_script ~/.config/i3/locker.sh
+set $lock_script ~/Git/linux/i3/locker.sh
 
 for_window [class="^.*"] border pixel 1
 
@@ -251,4 +251,4 @@ exec --no-startup-id volumeicon
 exec dropbox
 exec megasync
 
-bindsym $mod+Print exec "xfce4-screenshooter -rc; notify-send 'Screenshot copiado para o clipboard'"
+bindsym $mod+Print exec "maim -s --format=png /dev/stdout | xclip -selection clipboard -t image/png -i"
