@@ -5,7 +5,7 @@
 # this file and re-run i3-config-wizard(1).
 #
 set $config_path ~/.config/i3
-set $lock_script $config_path/locker.sh
+set $lock_script ~/.config/i3/locker.sh
 
 for_window [class="^.*"] border pixel 1
 
