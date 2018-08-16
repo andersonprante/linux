@@ -4,8 +4,8 @@
 # Should you change your keyboard layout some time, delete
 # this file and re-run i3-config-wizard(1).
 #
-
-set $lock_script ~/.config/i3/locker.sh
+set $config_path ~/.config/i3
+set $lock_script $config_path/locker.sh
 
 for_window [class="^.*"] border pixel 1
 
@@ -35,8 +35,7 @@ font pango:monospace 8
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-# The font above is very space-efficient, that is, it looks good, sharp and
-# clear in small sizes. However, its unicode glyph coverage is limited, the old
+# The font above is very space-efficient, that is, it looks good, sharp and# clear in small sizes. However, its unicode glyph coverage is limited, the old
 # X core fonts rendering does not support right-to-left and this being a bitmap
 # font, it doesn’t scale on retina/hidpi displays.
 
@@ -191,7 +190,7 @@ bindsym $mod+r mode "resize"
 bar {
   position top
   tray_output primary
-  status_command i3blocks -c ~/.config/i3/i3blocks/i3blocks.conf
+  status_command i3blocks -c $config_path/i3blocks/i3blocks.conf
   colors {
     background #000000
     statusline #ffffff
@@ -230,7 +229,7 @@ bindsym --release Num_Lock exec pkill -SIGRTMIN+11 i3blocks
 bindsym XF86MonBrightnessUp exec "xbacklight -inc 15"
 bindsym XF86MonBrightnessDown exec "xbacklight -dec 15"
 
-exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper.jpg
+exec_always --no-startup-id feh --bg-scale $config_path/wallpaper.jpg
 
 # exec --no-startup-id compton -f
 exec --no-startup-id xautolock -time 10 -locker $lock_script
