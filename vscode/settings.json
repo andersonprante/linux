@@ -4,7 +4,7 @@
     "terminal.integrated.fontSize": 12,
     "editor.fontSize": 11,
     "editor.minimap.showSlider": "always",
-    "editor.tabSize": 2,
+    "editor.tabSize": 4,
     "editor.fontFamily": "'Dejavu Sans Mono'",
     "workbench.iconTheme": "eq-material-theme-icons-ocean",
     "workbench.colorTheme": "One Dark Pro",

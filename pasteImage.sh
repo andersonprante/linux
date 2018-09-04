@@ -1,0 +1,2 @@
+#!/bin/bash
+xclip -selection clipboard -t image/png -o > $1.png
