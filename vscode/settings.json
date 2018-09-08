@@ -4,11 +4,10 @@
     "terminal.integrated.fontSize": 12,
     "editor.fontSize": 12,
     "editor.minimap.showSlider": "always",
-    "editor.tabSize": 4,
+    "editor.tabSize": 2,
     "editor.fontFamily": "'Fira code','Dejavu Sans Mono'",
     "editor.fontLigatures": true,
-    "workbench.iconTheme": "eq-material-theme-icons-ocean",
-    "workbench.colorTheme": "One Dark Pro",
+    "workbench.iconTheme": "vscode-icons",
     "extensions.ignoreRecommendations": true,
     "editor.minimap.enabled": false,
     "editor.wordWrap": "on",
@@ -20,5 +19,6 @@
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "window.newWindowDimensions": "maximized",
-    "window.zoomLevel": 0
+    "window.zoomLevel": 0,
+    "markdown-preview-enhanced.usePandocParser": true
 }
