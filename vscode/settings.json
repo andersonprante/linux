@@ -5,7 +5,7 @@
     "editor.fontSize": 12,
     "editor.minimap.showSlider": "always",
     "editor.tabSize": 2,
-    "workbench.iconTheme": "eq-material-theme-icons-ocean",
+    "workbench.iconTheme": "vscode-icons",
     "extensions.ignoreRecommendations": true,
     "editor.minimap.enabled": false,
     "editor.wordWrap": "on",
