@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sleep 1m
+
 filetext=$1
 
 fullfile=$2
