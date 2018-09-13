@@ -10,7 +10,6 @@
     "editor.wordWrap": "on",
     "markdown.extension.toc.updateOnSave": false,
     "explorer.openEditors.visible": 0,
-    "workbench.editor.enablePreview": false,
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "telemetry.enableCrashReporter": false,
