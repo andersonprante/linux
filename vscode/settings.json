@@ -14,7 +14,7 @@
     "files.trimTrailingWhitespace": true,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
-    "window.newWindowDimensions": "maximized",
+    "window.newWindowDimensions": "inherit",
     "markdown-preview-enhanced.usePandocParser": true,
     "markdown-preview-enhanced.latexEngine": "xelatex",
     "markdown-preview-enhanced.previewTheme": "vue.css",
@@ -32,5 +32,5 @@
     "liveServer.settings.donotShowInfoMsg": true,
     "workbench.editor.enablePreview": false,
     "explorer.confirmDelete": false,
-    "window.title": "${dirty}${activeEditorLong}${separator}${rootName}${separator}"
+    "extensions.autoUpdate": true
 }

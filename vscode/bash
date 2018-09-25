@@ -1,0 +1,15 @@
+code --install-extension Asuka.insertnumbers
+code --install-extension CoenraadS.bracket-pair-colorizer
+code --install-extension leizongmin.node-module-intellisense
+code --install-extension michelemelluso.code-beautifier
+code --install-extension mrmlnc.vscode-jade-snippets
+code --install-extension mrmlnc.vscode-pugbeautify
+code --install-extension ms-python.python
+code --install-extension ms-vsliveshare.vsliveshare
+code --install-extension naumovs.color-highlight
+code --install-extension octref.vetur
+code --install-extension robertohuertasm.vscode-icons
+code --install-extension RoscoP.ActiveFileInStatusBar
+code --install-extension shd101wyy.markdown-preview-enhanced
+code --install-extension Tyriar.lorem-ipsum
+code --install-extension yzhang.markdown-all-in-one

@@ -6,5 +6,5 @@ if [ -z $1 ]; then
 	code --list-extensions >> extensions.txt
 else	
 	echo "instalando extensões"
-	code --list-extensions | xargs -L 1 echo code --install-extension
+	cat extensions.txt | xargs -I {} sh -c "echo 0 | code --install-extension {}"
 fi
