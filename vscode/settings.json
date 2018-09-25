@@ -32,5 +32,6 @@
     "liveServer.settings.donotShowInfoMsg": true,
     "workbench.editor.enablePreview": false,
     "explorer.confirmDelete": false,
-    "extensions.autoUpdate": true
+    "extensions.autoUpdate": true,
+    "workbench.editor.showTabs": false
 }
