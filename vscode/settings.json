@@ -3,21 +3,34 @@
     "workbench.startupEditor": "newUntitledFile",
     "terminal.integrated.fontSize": 12,
     "editor.fontSize": 12,
+    "markdown.preview.fontFamily": "ubuntu mono",
     "editor.minimap.showSlider": "always",
     "editor.tabSize": 2,
     "extensions.ignoreRecommendations": true,
-    "editor.minimap.enabled": false,
     "editor.wordWrap": "on",
     "markdown.extension.toc.updateOnSave": false,
-    "explorer.openEditors.visible": 0,
+    "explorer.openEditors.visible": 1,
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "window.newWindowDimensions": "maximized",
-    "window.zoomLevel": 0,
     "markdown-preview-enhanced.usePandocParser": true,
     "markdown-preview-enhanced.latexEngine": "xelatex",
     "markdown-preview-enhanced.previewTheme": "vue.css",
-    "markdown-preview-enhanced.printBackground": true
+    "markdown-preview-enhanced.printBackground": true,
+    "todo-tree.defaultHighlight": {
+        "foreground": "green",
+        "type": "none"
+    },
+    "todo-tree.customHighlight": {
+        "TODO": {},
+        "FIXME": {}
+    },
+    "vim.disableExtension": true,
+    "liveServer.settings.donotVerifyTags": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "workbench.editor.enablePreview": false,
+    "explorer.confirmDelete": false,
+    "window.title": "${dirty}${activeEditorLong}${separator}${rootName}${separator}"
 }
