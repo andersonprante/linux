@@ -33,5 +33,7 @@
     "workbench.editor.enablePreview": false,
     "explorer.confirmDelete": false,
     "extensions.autoUpdate": true,
-    "workbench.editor.showTabs": false
+    "workbench.editor.showTabs": false,
+    "workbench.colorTheme": "Brogrammer",
+    "window.menuBarVisibility": "hidden"
 }
