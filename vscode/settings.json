@@ -2,7 +2,6 @@
     "window.menuBarVisibility": "toggle",
     "workbench.startupEditor": "newUntitledFile",
     "terminal.integrated.fontSize": 12,
-    "editor.fontSize": 12,
     "markdown.preview.fontFamily": "ubuntu mono",
     "editor.minimap.showSlider": "always",
     "editor.tabSize": 2,
@@ -33,7 +32,7 @@
     "workbench.editor.enablePreview": false,
     "explorer.confirmDelete": false,
     "extensions.autoUpdate": true,
-    "workbench.editor.showTabs": false,
-    "workbench.colorTheme": "Brogrammer",
-    "window.menuBarVisibility": "hidden"
+    "window.menuBarVisibility": "hidden",
+    "editor.fontSize": 12,
+    "explorer.openEditors.visible": 0
 }
