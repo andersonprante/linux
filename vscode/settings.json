@@ -33,6 +33,7 @@
     "explorer.confirmDelete": false,
     "extensions.autoUpdate": true,
     "window.menuBarVisibility": "hidden",
-    "editor.fontSize": 12,
-    "explorer.openEditors.visible": 0
+    "editor.fontSize": 10,
+    "explorer.openEditors.visible": 0,
+    "editor.fontFamily": "\"Noto Mono\", \"DejaVu Sans Mono\""
 }
