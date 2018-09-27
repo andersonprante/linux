@@ -35,5 +35,6 @@
     "window.menuBarVisibility": "hidden",
     "editor.fontSize": 10,
     "explorer.openEditors.visible": 0,
-    "editor.fontFamily": "\"Noto Mono\", \"DejaVu Sans Mono\""
+    "editor.fontFamily": "\"Noto Mono\", \"DejaVu Sans Mono\"",
+    "editor.formatOnSave": true
 }
