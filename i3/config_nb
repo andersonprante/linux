@@ -152,24 +152,23 @@ bar {
     urgent_workspace   $urgent-bg-color    $urgent-bg-color     #ffffff
   }
 }
-########################## </DEFAULT> ##########################
 
-########################## <NOTEBOOK-DELL> ##########################
+exec --no-startup-id xsetroot -solid "#000000" &
+bindsym $mod+Print exec "maim -s --format=png /dev/stdout | xclip -selection clipboard -t image/png -i"
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl -- set-sink-volume 0 +5% #increase sound volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl -- set-sink-volume 0 -5% #decrease sound volume
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+########################## </DEFAULT> ##########################
 
+########################## <NOTEBOOK-DELL> ##########################
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec echo $((`cat /sys/class/backlight/intel_backlight/brightness` + 300)) | sudo tee /sys/class/backlight/intel_backlight/brightness
 bindsym XF86MonBrightnessDown exec echo $((`cat /sys/class/backlight/intel_backlight/brightness` - 300)) | sudo tee /sys/class/backlight/intel_backlight/brightness
 
 exec --no-startup-id nm-applet &
 exec --no-startup-id megasync &
-exec --no-startup-id xsetroot -solid "#000000" &
 # exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 # exec xfsettingsd
-
-bindsym $mod+Print exec "maim -s --format=png /dev/stdout | xclip -selection clipboard -t image/png -i"
 
 exec /home/anderson/.screenlayout/emcasa.sh &
 ########################## </NOTEBOOK-DELL> ##########################
