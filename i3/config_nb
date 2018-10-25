@@ -203,7 +203,6 @@ bindsym $mod+r mode "resize"
 bar {
   status_command i3status -c ~/.config/i3/i3status.conf
   position top
-  output primary
   tray_output primary
   font pango:Noto Sans 8
   colors {
