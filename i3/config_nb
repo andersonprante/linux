@@ -232,3 +232,5 @@ exec --no-startup-id xsetroot -solid "#000000" &
 bindsym $mod+Print exec "maim -s --format=png /dev/stdout | xclip -selection clipboard -t image/png -i"
 
 exec /home/anderson/.screenlayout/emcasa.sh &
+
+for_window [class="gui-MainApplication"] floating enable
