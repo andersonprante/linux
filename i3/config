@@ -31,7 +31,8 @@ bindsym $mod+Return exec i3-sensible-terminal
 
 bindsym $mod+Shift+q kill
 
-bindsym $mod+d exec dmenu_run -fn 'DejaVu Sans Mono-10' -nb '#353945' -nf '#B0B8C5' -sb '$bg-color' -sf '#FDFEFF'
+# bindsym $mod+d exec dmenu_run -fn 'DejaVu Sans Mono-10' -nb '#353945' -nf '#B0B8C5' -sb '$bg-color' -sf '#FDFEFF'
+bindsym $mod+space exec dmenu_run -fn 'DejaVu Sans Mono-10' -nb '#353945' -nf '#B0B8C5' -sb '$bg-color' -sf '#FDFEFF'
 
 bindsym $mod+j focus left
 bindsym $mod+k focus down
@@ -65,7 +66,7 @@ bindsym $mod+e layout toggle split
 
 bindsym $mod+Shift+space floating toggle
 
-bindsym $mod+space focus mode_toggle
+# bindsym $mod+space focus mode_toggle
 
 bindsym $mod+a focus parent
 
