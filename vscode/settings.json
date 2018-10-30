@@ -19,7 +19,6 @@
     "editor.minimap.enabled": false,
     "workbench.iconTheme": "vscode-icons",
     "window.zoomLevel": 0,
-    "editor.fontLigatures": true,
     "editor.fontFamily": "'Fira Code','Droid Sans Mono'",
     "sync.gist": "d73952a5eb4b6070cbda002e487fbf30",
     "sync.quietSync": false,
@@ -42,5 +41,5 @@
         "TODO": {},
         "FIXME": {}
     },
-    "workbench.colorTheme": "Plastic"
+    "workbench.colorTheme": "Default Light+"
 }

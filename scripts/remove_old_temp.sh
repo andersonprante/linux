@@ -5,4 +5,4 @@
 
 find ~/temp/ -mtime +15 -exec rm {} \;
 
-notify-send "cleaned TEMP folder"
+echo "$(date +%Y\/%m\/%d\ %H:%M:%S) Limpou pasta ~/temp/" >> /tmp/limpezaTEMP.log

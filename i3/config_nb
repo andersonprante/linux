@@ -31,7 +31,13 @@ bindsym $mod+Return exec i3-sensible-terminal
 
 bindsym $mod+Shift+q kill
 
-bindsym $mod+d exec dmenu_run -fn 'DejaVu Sans Mono-10' -nb '#353945' -nf '#B0B8C5' -sb '$bg-color' -sf '#FDFEFF'
+# start dmenu (a program launcher)
+# bindsym $mod+d exec dmenu_run
+bindsym $mod+space exec dmenu_run -fn 'DejaVu Sans Mono-10' -nb '#353945' -nf '#B0B8C5' -sb '$bg-color' -sf '#FDFEFF'
+# There also is the (new) i3-dmenu-desktop which only displays applications
+# shipping a .desktop file. It is a wrapper around dmenu, so you need that
+# installed.
+# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 bindsym $mod+j focus left
 bindsym $mod+k focus down
@@ -140,7 +146,6 @@ bindsym $mod+r mode "resize"
 bar {
   status_command i3status -c ~/.config/i3/i3status.conf
   position top
-  output primary
   tray_output primary
   font pango:Noto Sans 8
   colors {
@@ -165,10 +170,15 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute s
 bindsym XF86MonBrightnessUp exec echo $((`cat /sys/class/backlight/intel_backlight/brightness` + 300)) | sudo tee /sys/class/backlight/intel_backlight/brightness
 bindsym XF86MonBrightnessDown exec echo $((`cat /sys/class/backlight/intel_backlight/brightness` - 300)) | sudo tee /sys/class/backlight/intel_backlight/brightness
 
+bindsym $mod+Print exec "maim -s --format=png /dev/stdout | xclip -selection clipboard -t image/png -i"
+
 exec --no-startup-id nm-applet &
 exec --no-startup-id megasync &
 # exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 # exec xfsettingsd
+exec --no-startup-id exec compton
+exec --no-startup-id exec /home/anderson/.screenlayout/emcasa.sh
+# exec --no-startup-id exec ~/.fehbg &
 
 exec /home/anderson/.screenlayout/emcasa.sh &
 ########################## </NOTEBOOK-DELL> ##########################
