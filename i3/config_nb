@@ -225,13 +225,41 @@ bindsym XF86MonBrightnessDown exec echo $((`cat /sys/class/backlight/intel_backl
 
 bindsym $mod+Print exec "maim -s --format=png /dev/stdout | xclip -selection clipboard -t image/png -i"
 
-exec --no-startup-id nm-applet &
-exec --no-startup-id megasync &
+# exec --no-startup-id nm-applet &
 # exec --no-startup-id xsetroot -solid "#000000" &
 # exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 # exec xfsettingsd
+exec --no-startup-id megasync &
 exec --no-startup-id exec compton
-exec --no-startup-id exec /home/anderson/.screenlayout/emcasa.sh 
+exec --no-startup-id exec /home/anderson/.screenlayout/emcasa.sh
 # exec --no-startup-id exec ~/.fehbg &
+
+# auto start default installation ubuntu
+# exec --no-startup-id light-locker
+exec --no-startup-id blueman-applet
+exec --no-startup-id nm-applet
+exec --no-startup-id system-config-printer-applet
+exec --no-startup-id /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately
+exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=pkcs11
+exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=secrets
+exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=ssh
+exec --no-startup-id /usr/bin/gnome-software --gapplication-service
+exec --no-startup-id gsettings-data-convert
+exec --no-startup-id /usr/lib/x86_64-linux-gnu/indicator-messages/indicator-messages-service
+exec --no-startup-id sh -c '/usr/bin/nvidia-settings --load-config-only'
+exec --no-startup-id onboard --not-show-in=GNOME,GNOME-Classic:GNOME --startup-delay=3.0
+exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+exec --no-startup-id start-pulseaudio-x11
+exec --no-startup-id /usr/bin/snap userd --autostart
+exec --no-startup-id /usr/bin/spice-vdagent
+exec --no-startup-id update-notifier
+exec --no-startup-id xdg-user-dirs-gtk-update
+exec --no-startup-id xdg-user-dirs-update
+# exec --no-startup-id xfce4-notes
+exec --no-startup-id xfce4-power-manager
+# exec --no-startup-id xfsettingsd
+# exec --no-startup-id /usr/share/xscreensaver/xscreensaver-wrapper.sh -no-splash
+# exec --no-startup-id xscreensaver
+
 
 for_window [class="gui-MainApplication"] floating enable
