@@ -69,9 +69,9 @@ bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
-bindsym $mod+Shift+space floating toggle
+# bindsym $mod+Shift+space floating toggle
 
-bindsym $mod+space focus mode_toggle
+# bindsym $mod+space focus mode_toggle
 
 bindsym $mod+a focus parent
 
@@ -169,8 +169,6 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute s
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec echo $((`cat /sys/class/backlight/intel_backlight/brightness` + 300)) | sudo tee /sys/class/backlight/intel_backlight/brightness
 bindsym XF86MonBrightnessDown exec echo $((`cat /sys/class/backlight/intel_backlight/brightness` - 300)) | sudo tee /sys/class/backlight/intel_backlight/brightness
-
-bindsym $mod+Print exec "maim -s --format=png /dev/stdout | xclip -selection clipboard -t image/png -i"
 
 # exec --no-startup-id xsetroot -solid "#000000" &
 # exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
