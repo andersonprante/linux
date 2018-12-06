@@ -14,25 +14,17 @@
     "workbench.editor.enablePreview": false,
     "explorer.confirmDelete": false,
     "extensions.autoUpdate": true,
-    "window.menuBarVisibility": "toggle",
+    "window.menuBarVisibility": "hidden",
     "explorer.openEditors.visible": 0,
     "editor.minimap.enabled": false,
     "workbench.iconTheme": "vscode-icons",
     "window.zoomLevel": 0,
     "editor.fontFamily": "'Fira Code','Droid Sans Mono'",
-    "sync.gist": "d73952a5eb4b6070cbda002e487fbf30",
-    "sync.quietSync": false,
-    "sync.removeExtensions": true,
-    "sync.syncExtensions": true,
-    "sync.autoDownload": false,
-    "sync.autoUpload": false,
-    "sync.forceDownload": true,
     "editor.fontWeight": "500",
     "explorer.confirmDragAndDrop": false,
     "editor.fontSize": 12,
     "git.enabled": false,
-    "arduino.path": "/opt/arduino",
-    "arduino.commandPath": "arduino",
+    "arduino.path": "/opt/arduino-1.8.5",
     "todo-tree.defaultHighlight": {
         "foreground": "green",
         "type": "none"
@@ -41,5 +33,7 @@
         "TODO": {},
         "FIXME": {}
     },
-    "workbench.colorTheme": "Plastic"
+    "sync.gist": "c04d127e9467bb1a5ea80ad2ee1f5d38",
+    "workbench.colorTheme": "Plastic - deprioritised punctuation",
+    "arduino.commandPath": "/opt/arduino-1.8.5/arduino"
 }
