@@ -34,6 +34,6 @@
         "FIXME": {}
     },
     "sync.gist": "c04d127e9467bb1a5ea80ad2ee1f5d38",
-    "workbench.colorTheme": "Plastic - deprioritised punctuation",
-    "arduino.commandPath": "/opt/arduino-1.8.5/arduino"
+    "arduino.commandPath": "/opt/arduino-1.8.5/arduino",
+    "workbench.colorTheme": "Plastic"
 }
