@@ -162,9 +162,12 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute s
 ########################## </DEFAULT> ##########################
 
 ########################## <IFFAR> ##########################
-exec megasync
+# exec megasync
+exec telegram-desktop
 exec dropbox
-exec thunderbird
+exec flameshot
+exec megasync
+exec syncthing -no-browser -home="/home/anderson/.config/syncthing/"
 # bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
 # bindsym --release Num_Lock exec pkill -SIGRTMIN+11 i3blocks
 ########################## </IFFAR> ##########################
