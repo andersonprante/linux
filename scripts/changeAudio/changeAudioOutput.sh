@@ -1,6 +1,8 @@
 #!/bin/bash
 
-DIR=/home/ap/Git/linux/scripts/changeAudio
+SCRIPT=$(readlink -f $0)
+DIR=`dirname $SCRIPT`
+# DIR=/home/ap/Git/linux/scripts/changeAudio
 
 if [[ $XDG_CURRENT_DESKTOP == "i3" ]]; then
     #notify-send "Ambiente i3"
